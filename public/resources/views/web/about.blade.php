@@ -58,7 +58,7 @@
                         <div class="text">{!! $about->description !!} <br/></div>
                     </div>
                 </div>
-                {{-- <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     @if(isset($about->mission_title))
                     <div class="innner-box wow fadeInLeft">
                         <div class="info-box">
@@ -75,11 +75,11 @@
                         </div>
                     </div>
                     @endif
-                </div> --}}
+                </div>
             </div>
             @endif
 
-            {{-- @if(count($counters) > 0)
+            { @if(count($counters) > 0)
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 clearfix fun-fact-section">
                     <div class="fact-counter">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            @endif --}}
+            @endif
         </div>
     </section>
     <!--End About Section --> 
@@ -138,7 +138,7 @@
                             @endforeach
                         </ul>
 
-                        {{-- @php
+                        @php
                             $page_quote = \App\Models\PageSetup::page('get-quote');
                             $page_contact = \App\Models\PageSetup::page('contact-us');
                         @endphp
@@ -146,7 +146,7 @@
                         <a href="{{ route('get-quote') }}" class="btn-theme btn-style-five">{{ __('navbar.get_quote') }}</a>
                         @elseif(isset($page_contact))
                         <a href="{{ route('contact') }}" class="btn-theme btn-style-five">{{ __('common.get_start') }}</a>
-                        @endif --}}
+                        @endif
                     </div>
                 </div>
                 @endif
@@ -157,7 +157,7 @@
     @endif
 
 
-    {{-- @php
+  @php
         $section_team = \App\Models\Section::section('team');
     @endphp
     @if(count($members) > 0 && isset($section_team))
@@ -214,7 +214,7 @@
         </div>
     </section>
     <!--End Team Section -->
-    @endif --}}
+    @endif 
 
 
     @php

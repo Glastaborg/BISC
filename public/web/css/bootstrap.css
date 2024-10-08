@@ -10,7 +10,7 @@
     --purple: #6f42c1;
     --pink: #e83e8c;
     --red: #dc3545;
-    --orange: #fd7e14;
+    --orange: #fff;
     --yellow: #ffc107;
     --green: #28a745;
     --teal: #20c997;
@@ -1174,11 +1174,11 @@ pre code {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
-    .col-lg-8 {
+    /* .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-    }
+    } */
     .col-lg-9 {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;

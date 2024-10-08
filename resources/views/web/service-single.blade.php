@@ -54,7 +54,7 @@
                 </div>
                 <div class="bread-crumb">
                     <ul>
-                        <li>{{ __('navbar.service-detail') }}</li>
+                        <li>{{ __('training-detail') }}</li>
                         <li><a href="{{ route('home') }}">{{ __('navbar.home') }}</a></li>
                     </ul>
                 </div>

@@ -129,7 +129,7 @@ font-family: 'Nunito Sans', sans-serif;
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    color: #777777;
+    color: 000000;
     line-height: 28px;
     font-weight: 400;
     background: #ffffff;
@@ -200,7 +200,7 @@ p,
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
-    color: #777777;
+    color: 000000;
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
@@ -259,18 +259,18 @@ img {
     text-transform: capitalize;
     font-weight: 400;
     border-radius: 50px;
-    background-color: #ff0004c8;
+    background-color: #04145f;
     font-family: "Nunito Sans", sans-serif;
     display: inline-block;
 }
 
 .btn-style-one:hover {
-    color: #ffffff;
-    -webkit-box-shadow: rgba(255, 156, 0, 1) 0 0px 0px 40px inset;
-    -moz-box-shadow: rgba(255, 156, 0, 1) 0 0px 0px 40px inset;
-    -ms-box-shadow: rgba(255, 156, 0, 1) 0 0px 0px 40px inset;
-    -o-box-shadow: rgba(255, 156, 0, 1) 0 0px 0px 40px inset;
-    box-shadow: rgba(255, 156, 0, 1) 0 0px 0px 40px inset;
+    color: #04145f;
+    -webkit-box-shadow: rgb(255, 255, 255) 0 0px 0px 40px inset;
+    -moz-box-shadow: rgb(255, 255, 255) 0 0px 0px 40px inset;
+    -ms-box-shadow: rgb(255, 255, 255) 0 0px 0px 40px inset;
+    -o-box-shadow: rgb(255, 255, 255) 0 0px 0px 40px inset;
+    box-shadow: rgb(255, 255, 255) 0 0px 0px 40px inset;
 }
 
 .btn-style-one:before {
@@ -539,7 +539,7 @@ img {
 .sec-title h2 {
     font-size: 36px;
     line-height: 36px;
-    color: #ff0004c8;
+    color: #04145f;
     font-weight: 800;
     padding-bottom: 26px;
 }
@@ -563,7 +563,7 @@ img {
     width: 40px;
     height: 2px;
     display: inline-block;
-    background-color: #ff0004c8;
+    background-color: #04145f;
     text-align: center;
 }
 
@@ -681,7 +681,7 @@ img {
 
 .main-header .header-top .top-left .links li .icon {
     position: relative;
-    color: #ff0004c8;
+    color: #f0082d;
     margin-right: 15px;
 }
 /***************** End Header Top ******************/
@@ -816,7 +816,7 @@ img {
     min-height: 56px;
     margin-left: 50px;
     font-size: 13px;
-    color: #777777;
+    color: 000000;
     text-align: left;
     padding: 0px 0px 20px 65px;
 }
@@ -843,7 +843,7 @@ img {
 .main-header .info-box > ul li {
     position: relative;
     line-height: 20px;
-    color: #777777;
+    color: 000000;
     font-size: 14px;
     margin-top: 5px;
     font-weight: 400;
@@ -852,7 +852,7 @@ img {
 .main-header .info-box strong {
     position: relative;
     font-weight: 700;
-    color: #ff0004c8;
+    color: #04145f;
     font-size: 20px;
     line-height: 20px;
 }
@@ -1130,7 +1130,7 @@ img {
 }
 
 .main-menu .navigation > li > a:hover {
-    color: #ff0004c8;
+    color: #04145f;
 }
 .sticky-header .main-menu .navigation > li {
     position: relative;
@@ -1142,7 +1142,7 @@ img {
     font-size: 14px;
 }
 .sticky-header .main-menu .navigation > li.advisor-box > a {
-    background: #ff0004c8 !important;
+    background: #04145f !important;
     color: #fff !important;
     padding: 20px 5px !important;
 }
@@ -1416,7 +1416,7 @@ img {
     font-weight: 700;
     line-height: 24px;
     padding: 18px 20px 18px 15px;
-    background-color: #ff0004c8;
+    background-color: #04145f;
     border: 1px solid #ffffff;
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1998,7 +1998,7 @@ img {
     display: block;
     font-size: 18px;
     line-height: 36px;
-    color: #777777;
+    color: 000000;
     font-weight: 800;
     margin: 35px 0px 43px;
     font-family: "Nunito Sans", sans-serif;
@@ -2435,7 +2435,7 @@ img {
     width: 100%;
     height: 100%;
     background: #04145f;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     position: absolute;
 }
 
@@ -2476,7 +2476,7 @@ img {
     height: 100%;
     top: 0;
     content: "";
-    background: rgba(35, 5, 72, 0.7);
+    background: rgb(255 255 255 / 70%);
     left: -100%;
 }
 
@@ -2486,11 +2486,11 @@ img {
     width: 100%;
     height: 100%;
     top: 0;
-    background: rgba(35, 5, 72, 0.7);
+    background: rgb(255 255 255 / 70%);
     right: -100%;
 }
 .page-title .bread-crumb ul {
-    background: rgba(35, 5, 72, 0.7);
+    background: rgb(255 255 255 / 70%);
     padding: 16px 30px 45px;
     position: relative;
     display: block;
@@ -2500,7 +2500,7 @@ img {
     position: relative;
     font-size: 18px;
     line-height: 30px;
-    color: #ff0004c8;
+    color: #04145f;
     font-weight: 400;
     text-transform: capitalize;
     cursor: default;
@@ -2823,7 +2823,7 @@ img {
 .our-mission-section .innner-box .info-box h4 {
     font-size: 20px;
     font-weight: 700;
-    color: #ff0004c8;
+    color: #04145f;
     padding-bottom: 20px;
 }
 
@@ -2940,7 +2940,7 @@ img {
     display: block;
     font-size: 14px;
     line-height: 27px;
-    color: #777777;
+    color: 000000;
     font-weight: 400;
     margin-bottom: 27px;
 }
@@ -3373,7 +3373,7 @@ img {
     position: relative;
     font-size: 14px;
     line-height: 30px;
-    color: #777777;
+    color: 000000;
     margin-bottom: 30px;
 }
 
@@ -3629,7 +3629,7 @@ img {
     position: relative;
     font-size: 14px;
     line-height: 30px;
-    color: #777777;
+    color: 000000;
     margin-bottom: 0px;
 }
 
@@ -4244,7 +4244,7 @@ img {
     padding-bottom: 18px;
 }
 .team-section .sec-title.left {
-    text-align: left;
+    text-align: center;
     margin-bottom: 40px;
 }
 .team-section::before {
@@ -4263,22 +4263,22 @@ img {
 }
 .team-section .sec-title .text,
 .team-section .sec-title .text p {
-    color: #fff;
+    color: #000000;
 }
 .team-section .sec-title .separater,
 .team-section .sec-title .separater:before {
     background-color: #fff;
 }
 .team-section.style-two .sec-title h2 {
-    color: #ff0004c8;
+    color: #04145f;
 }
 .team-section.style-two .sec-title .text,
 .team-section.style-two .sec-title .text p {
-    color: #777777 !important;
+    color: 000000 !important;
 }
 .team-section.style-two .sec-title .separater,
 .team-section.style-two .sec-title .separater:before {
-    background-color: #ff0004c8;
+    background-color: #04145f;
 }
 .team-section .team-block {
     position: relative;
@@ -4388,7 +4388,7 @@ img {
     text-align: center;
     font-size: 15px;
     line-height: 30px;
-    color: #ff0004c8;
+    color: #04145f;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
 }
@@ -4546,7 +4546,7 @@ img {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #fff;
-    background-color: #ff0004c8;
+    background-color: #04145f;
     width: 40px;
     height: 70px;
     text-align: center;
@@ -4559,7 +4559,7 @@ img {
     display: block;
     font-size: 14px;
     line-height: 27px;
-    color: #777777;
+    color: 000000;
     font-weight: 400;
     margin-bottom: 28px;
 }
@@ -4682,7 +4682,7 @@ img {
     display: block;
     width: 100%;
     font-size: 14px;
-    color: #777777;
+    color: 000000;
     line-height: 30px;
     padding: 14px 25px 14px 0;
     background-color: #ffffff;
@@ -5010,7 +5010,7 @@ img {
     -ms-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    color: #777777;
+    color: 000000;
     font-family: "Roboto", sans-serif;
     margin-left: -10px;
 }
@@ -5705,7 +5705,7 @@ img {
     display: block;
     font-size: 14px;
     line-height: 28px;
-    color: #777777;
+    color: 000000;
     font-weight: 400;
     margin-bottom: 28px;
     margin-left: 55px;
@@ -5713,7 +5713,7 @@ img {
 
 .contact-section .info-column .contact-info li a {
     display: inline-block;
-    color: #777777;
+    color: 000000;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -5763,7 +5763,7 @@ img {
     display: block;
     width: 100%;
     font-size: 13px;
-    color: #777777;
+    color: 000000;
     line-height: 19px;
     padding: 15px 30px;
     background-color: #fff;
@@ -5931,7 +5931,7 @@ img {
 }
 
 .news-block .image-box .image img {
-   margin: 0 auto;
+    margin: 0 auto;
     width: auto;
     height: auto;
     min-width: 100%;
@@ -6031,14 +6031,14 @@ img {
 }
 .news-block .caption-box .post-meta li i {
     margin-right: 10px;
-    color: #ff0004c8;
+    color: #04145f;
 }
 .news-block .inner-box:hover .caption-box .post-meta li {
     color: #222222;
 }
 
 .news-block .caption-box .post-meta li a {
-    color: #777777;
+    color: 000000;
 }
 
 /*** 
@@ -6161,14 +6161,14 @@ img {
 }
 .news-block-two .caption-box .post-meta li i {
     margin-right: 6px;
-    color: #ff0004c8;
+    color: #04145f;
 }
 .news-block-two .inner-box:hover .caption-box .post-meta li {
     color: #222222;
 }
 
 .news-block-two .caption-box .post-meta li a {
-    color: #777777;
+    color: 000000;
 }
 
 /*** 
@@ -6426,7 +6426,7 @@ img {
     position: relative;
     font-size: 14px;
     line-height: 30px;
-    color: #777777;
+    color: 000000;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -6637,7 +6637,7 @@ img {
     position: relative;
     font-size: 12px;
     line-height: 17px;
-    color: #777777;
+    color: 000000;
     font-weight: 600;
 }
 .next-pre-post .post .post-info a:hover {
@@ -6691,7 +6691,7 @@ img {
 }
 .author-box .inner-box .text {
     position: relative;
-    color: #777777;
+    color: 000000;
     font-size: 15px;
     line-height: 1.7em;
     margin-bottom: 10px;
@@ -7025,7 +7025,7 @@ img {
     position: relative;
     padding: 46px 0px;
     overflow: hidden;
-    background-color: #ff0004c8;
+    background-color: #04145f;
 }
 
 .subscribe-section:before {
@@ -7081,7 +7081,7 @@ img {
 
 .subscribe-section h2 {
     position: relative;
-    color: #fff;
+    color: #ffffff;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2em;
@@ -7301,7 +7301,7 @@ img {
     position: relative;
     display: block;
     font-size: 14px;
-    color: #777777;
+    color: 000000;
     line-height: 28px;
     padding: 15px 25px;
     height: 60px;
@@ -7451,7 +7451,7 @@ img {
     position: relative;
     font-size: 14px;
     line-height: 24px;
-    color: #777777;
+    color: 000000;
     font-weight: 400;
 }
 
@@ -7549,7 +7549,7 @@ img {
     position: relative;
     font-size: 20px;
     font-weight: 700;
-    color: #ff0004c8;
+    color: #04145f;
     line-height: 30px;
     margin-bottom: 36px;
     padding-bottom: 13px;
@@ -7630,7 +7630,7 @@ img {
 
 .main-footer .about-widget .info-box li span {
     display: block;
-    color: #ff0004c8;
+    color: #04145f;
     font-size: 16px;
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
@@ -7704,7 +7704,7 @@ img {
     display: inline-block;
     font-size: 14px;
     line-height: 24px;
-    color: #ff0004c8;
+    color: #04145f;
     font-weight: 400;
     font-family: "Nunito Sans", sans-serif;
 }
@@ -7910,7 +7910,7 @@ img {
     color: #04145f;
 }
 .main-footer.style-two .recent-posts .post .post-date li {
-    color: #777777;
+    color: 000000;
 }
 .main-footer.style-two .recent-posts .owl-nav .owl-prev:hover,
 .main-footer.style-two .recent-posts .owl-nav .owl-next:hover {
@@ -7952,7 +7952,7 @@ img {
     color: #04145f;
 }
 .main-footer.style-three .recent-posts .post .post-date li {
-    color: #777777;
+    color: 000000;
 }
 .main-footer.style-three .recent-posts .owl-nav .owl-prev:hover,
 .main-footer.style-three .recent-posts .owl-nav .owl-next:hover {
@@ -7974,6 +7974,7 @@ img {
     position: relative;
     float: left;
     padding: 20px 0;
+    color: #ffffff;
 }
 
 .main-footer .footer-bottom .copyright-text p {
@@ -8098,3 +8099,76 @@ img {
     background-color: #04145f;
     border-color: #04145f;
 }
+
+
+/*=== Seminar Pictures Section ===*/
+   
+    .seminar-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+
+    .seminar-section .sec-title h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .seminar-section .separater {
+        width: 80px;
+        height: 3px;
+        background-color: #1a73e8;
+        margin: 0 auto 40px;
+    }
+
+    .image-box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        width: 100%;
+    }
+
+    .image-box img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.4s ease;
+    }
+
+    .image-box:hover img {
+        transform: scale(1.1);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.4s ease;
+    }
+
+    .image-box:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay-text {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .seminar-box {
+            margin-bottom: 20px;
+        }
+    }
+

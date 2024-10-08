@@ -30,11 +30,11 @@
         <div class="container">
             <div class="inner-container clearfix">
                 <div class="title-box">
-                    <h1>{{ __('navbar.services') }}</h1>
+                    <h1>{{ __('navbar.training') }}</h1>
                 </div>
                 <div class="bread-crumb">
                     <ul>
-                        <li>{{ __('navbar.services') }}</li>
+                        <li>{{ __('navbar.training') }}</li>
                         <li><a href="{{ route('home') }}">{{ __('navbar.home') }}</a></li>
                     </ul>
                 </div>

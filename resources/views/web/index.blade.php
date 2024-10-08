@@ -111,7 +111,8 @@
                                     </div>
                                 @endif
                             </div>
-                            {{-- </div>
+                            <br
+                            </div>
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     @if (isset($about->mission_title))
                     <div class="innner-box wow fadeInLeft">
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                     @endif
-                </div> --}}
+                </div>
                         </div>
                 @endif
 
@@ -157,6 +158,46 @@
         </section>
         <!--End About Section -->
     @endif
+
+    <!-- Seminar Pictures Section -->
+<section class="seminar-section">
+    <div class="container">
+        <div class="sec-title center">
+            <h2>Our Seminars</h2>
+            <div class="separater"></div>
+        </div>
+        <div class="row">
+            <!-- Seminar Image 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 seminar-box">
+                <div class="image-box">
+                    <img src="uploads\seminar\pic_9.jpg" alt="Seminar 1">
+                    <div class="overlay">
+                        <div class="overlay-text">Seminar 1 Details</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seminar Image 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 seminar-box">
+                <div class="image-box">
+                    <img src="uploads\seminar\pic_11.jpg" alt="Seminar 2">
+                    <div class="overlay">
+                        <div class="overlay-text">Seminar 2 Details</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seminar Image 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 seminar-box">
+                <div class="image-box">
+                    <img src="uploads\seminar\pic_15.jpg" alt="Seminar 3">
+                    <div class="overlay">
+                        <div class="overlay-text">Seminar 3 Details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Seminar Pictures Section -->
 
 
     @php
@@ -280,70 +321,63 @@
     @endif
 
 
-    @php
+     @php
         $section_team = \App\Models\Section::section('team');
     @endphp
-    @if (count($members) > 0 && isset($section_team))
-        <!-- Team Section -->
-        <section class="team-section">
-            <div class="container">
-                <div class="sec-title left">
-                    <h2>{{ $section_team->title }}</h2>
-                    <div class="text">{!! $section_team->description !!}</div>
-                    <div class="separater"></div>
-                </div>
-
-                <div class="outer-column clearfix">
-                    <div class="team-carousal">
-                        @foreach ($members as $member)
-                            <!-- Team Block -->
-                            <div class="team-block">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <div class="image"><img src="{{ asset('uploads/member/' . $member->image_path) }}"
-                                                alt="{{ $member->title }}"></div>
-
-                                    </div>
-                                    <div class="info-box">
-                                        <h3 class="name"><a>{{ $member->title }}</a></h3>
-                                        <span class="designation">{{ $member->designation->title }}@if (isset($member->designation->department))
-                                                , {{ $member->designation->department }}
-                                            @endif
-                                        </span>
-                                        @if (isset($member->email))
-                                            <span><i class="far fa-envelope"></i> {{ $member->email }}</span>
-                                        @endif
-                                        @if (isset($member->phone))
-                                            <span><i class="fas fa-phone-volume"></i> {{ $member->phone }}</span>
-                                        @endif
-                                    </div>
-                                    <ul class="social-links">
-                                        @if (isset($member->facebook))
-                                            <li><a href="{{ $member->facebook }}" target="_blank"><i
-                                                        class="fab fa-facebook-f"></i></a></li>
-                                        @endif
-                                        @if (isset($member->twitter))
-                                            <li><a href="{{ $member->twitter }}" target="_blank"><i
-                                                        class="fab fa-twitter"></i></a></li>
-                                        @endif
-                                        @if (isset($member->instagram))
-                                            <li><a href="{{ $member->instagram }}" target="_blank"><i
-                                                        class="fab fa-instagram"></i></a></li>
-                                        @endif
-                                        @if (isset($member->linkedin))
-                                            <li><a href="{{ $member->linkedin }}" target="_blank"><i
-                                                        class="fab fa-linkedin-in"></i></a></li>
-                                        @endif
-                                    </ul>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-
-                </div>
+    @if(count($members) > 0 && isset($section_team))
+    <!-- Team Section -->
+    <section class="team-section style-two">
+        <div class="container">
+            <div class="sec-title left">
+                <h2>{{ $section_team->title }}</h2>
+                <div class="text">{!! $section_team->description !!}</div>
+                <div class="separater"></div>
             </div>
-        </section>
-        <!--End Team Section -->
+            
+            <div class="row clearfix">
+
+                @foreach($members as $member)
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Team Block -->
+                    <div class="team-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <div class="image"><img src="{{ asset('uploads/member/'.$member->image_path) }}" alt="{{ $member->title }}"></div>
+                                
+                            </div>
+                            <div class="info-box">
+                                <h3 class="name"><a>{{ $member->title }}</a></h3>
+                                <span class="designation">{{ $member->designation->title }}@if(isset($member->designation->department)), {{ $member->designation->department }}@endif</span>
+                                @if(isset($member->email))
+                                <span><i class="far fa-envelope"></i> {{ $member->email }}</span>
+                                @endif
+                                @if(isset($member->phone))
+                                <span><i class="fas fa-phone-volume"></i> {{ $member->phone }}</span>
+                                @endif
+                            </div>
+                            <ul class="social-links">
+                                @if(isset($member->facebook))
+                                <li><a href="{{ $member->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                @endif
+                                @if(isset($member->twitter))
+                                <li><a href="{{ $member->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                @endif
+                                @if(isset($member->instagram))
+                                <li><a href="{{ $member->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                @endif
+                                @if(isset($member->linkedin))
+                                <li><a href="{{ $member->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                @endif
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+            </div>
+        </div>
+    </section>
+    <!--End Team Section -->
     @endif
 
 

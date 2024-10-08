@@ -302,6 +302,7 @@
                                     <div class="image-box">
                                         <div class="image"><img src="{{ asset('uploads/member/' . $member->image_path) }}"
                                                 alt="{{ $member->title }}"></div>
+                                                
 
                                     </div>
                                     <div class="info-box">
@@ -422,7 +423,7 @@
                                                 <h3><a
                                                         href="{{ route('blog.single', $article->slug) }}">{!! str_limit(strip_tags($article->title), 50, ' ...') !!}</a>
                                                 </h3>
-                                                <div class="text">{!! str_limit(strip_tags($article->description), 110, ' ...') !!}</div>
+                                                <div class="text">{!! str_limit(strip_tags($article->description), 500, ' ...') !!}</div>
                                                 <ul class="post-meta">
                                                     <li><i class="far fa-calendar-check"></i>
                                                         {{ date('d M, Y', strtotime($article->created_at)) }}</li>
@@ -458,7 +459,7 @@
                                                 <h3><a
                                                         href="{{ route('blog.single', $article->slug) }}">{!! str_limit(strip_tags($article->title), 50, ' ...') !!}</a>
                                                 </h3>
-                                                <div class="text">{!! str_limit(strip_tags($article->description), 110, ' ...') !!}</div>
+                                                <div class="text">{!! str_limit(strip_tags($article->description), 500, ' ...') !!}</div>
                                                 <ul class="post-meta">
                                                     <li><i class="far fa-calendar-check"></i>
                                                         {{ date('d M, Y', strtotime($article->created_at)) }}</li>

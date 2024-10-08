@@ -103,56 +103,55 @@
         @endif
     
         <!--Header-Upper-->
-        <div class="header-upper">
-            <div class="container">
-                <div class="clearfix">
-                    <div class="nav-inner">
-                        @if(isset($setting))
-                        {{-- <div class="pull-left logo-box"> --}}
-                            <div class="logo"><a href="{{ route('home') }}"><img src="{{ asset('/uploads/setting/'.$setting->logo_path) }}" alt="Logo"></a></div>
-                        {{-- </div> --}}
-                        @endif
-                
-                        <div class="pull-right upper-right clearfix">
-                            
-                            <!--Info Box-->
-                            @if(isset($setting->office_hours))
-                            <div class="upper-column info-box">
-                                <div class="icon-box"><span class="flaticon-clock"></span></div>
-                                <ul>
-                                    <li><strong>{{ __('contact.office_time') }}:</strong></li>
-                                    <li>{!! strip_tags($setting->office_hours) !!}</li>
-                                </ul>
-                            </div>
-                            @endif
-                            
-                            @if(isset($setting->phone_one))
-                            <!--Info Box-->
-                            <div class="upper-column info-box">
-                                <div class="icon-box"><span class="flaticon-phone-call"></span></div>
-                                <ul>
-                                    <li><strong>{{ __('contact.phone') }}:</strong></li>
-                                    <li>{{ $setting->phone_one }}</li>
-                                </ul>
-                            </div>
-                            @endif
-                            
-                            @if(isset($setting->email_one))
-                            <!--Info Box-->
-                            <div class="upper-column info-box">
-                                <div class="icon-box"><span class="flaticon-email"></span></div>
-                                <ul>
-                                    <li><strong>{{ __('contact.email') }}:</strong></li>
-                                    <li>{{ $setting->email_one }}</li>
-                                </ul>
-                            </div>
-                            @endif
-                        </div>
+<div class="header-upper">
+    <div class="container">
+        <div class="clearfix">
+            <div class="nav-inner">
+                @if(isset($setting))
+                <div class="pull-left logo-box">
+                    <div class="logo"><a href="{{ route('home') }}"><img src="{{ asset('/uploads/setting/'.$setting->logo_path) }}" alt="Logo"></a></div>
+                </div>
+                @endif
+
+                <div class="pull-right upper-right clearfix">
+                    @if(isset($setting->office_hours))
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <div class="icon-box"><span class="flaticon-clock"></span></div>
+                        <ul>
+                            <li><strong>{{ __('contact.office_time') }}:</strong></li>
+                            <li>{!! strip_tags($setting->office_hours) !!}</li>
+                        </ul>
                     </div>
+                    @endif
+
+                    @if(isset($setting->phone_one))
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <div class="icon-box"><span class="flaticon-phone-call"></span></div>
+                        <ul>
+                            <li><strong>{{ __('contact.phone') }}:</strong></li>
+                            <li>{{ $setting->phone_one }}</li>
+                        </ul>
+                    </div>
+                    @endif
+
+                    @if(isset($setting->email_one))
+                    <!--Info Box-->
+                    <div class="upper-column info-box">
+                        <div class="icon-box"><span class="flaticon-email"></span></div>
+                        <ul>
+                            <li><strong>{{ __('contact.email') }}:</strong></li>
+                            <li>{{ $setting->email_one }}</li>
+                        </ul>
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>
-        <!--End Header Upper-->
+    </div>
+</div>
+<!--End Header Upper-->
         
         <!--Header Lower-->
         <div class="header-lower">
@@ -430,8 +429,8 @@
                                     <div class="widget-content">
                                         <ul class="info-box">
                                             <li><i class="far fa-map"></i><span>{{ __('contact.address') }}:</span> {{ $setting->contact_address }}</li>
-                                            <li><i class="fa fa-phone-volume"></i> <span>{{ __('contact.phone') }}:</span> {{ $setting->phone_one }}@if(isset($setting->phone_two)), @endif {{ $setting->phone_two }} </li>
-                                            <li><i class="fas fa-envelope"></i> <span>{{ __('contact.email') }}:</span> {{ $setting->email_one }}@if(isset($setting->email_two)), @endif {{ $setting->email_two }} </li>
+                                            <li><i class="fa fa-phone-volume"></i> <span>{{ __('contact.phone') }}:</span> {{ $setting->phone_one }}@if(isset($setting->phone_two)) @endif {{ $setting->phone_two }} </li>
+                                            <li><i class="fas fa-envelope"></i> <span>{{ __('contact.email') }}:</span> {{ $setting->email_one }}@if(isset($setting->email_two))@endif {{ $setting->email_two }} </li>
                                         </ul>
                                     </div>
                                     @endif

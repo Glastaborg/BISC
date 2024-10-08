@@ -2,6 +2,13 @@
 @section('title', $title)
 @section('content')
 
+<!-- Include necessary CSS and JS for Summernote -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.js"></script>
+
 <!-- Start Content-->
 <div class="container-fluid">
     
@@ -9,7 +16,6 @@
     <!-- Include page breadcrumb -->
     @include('admin.inc.breadcrumb')
     <!-- end page title --> 
-
 
     <div class="row">
         <div class="col-12">
@@ -48,7 +54,7 @@
                         </div>
                     </div>
 
-                    {{-- <div class="row">
+                    <div class="row">
                       <div class="col-md-6">
                       <div class="form-group">
                         <label for="mission_title">{{ __('dashboard.mission_title') }}</label>
@@ -57,9 +63,9 @@
                         <div class="invalid-feedback">
                           {{ __('dashboard.please_provide') }} {{ __('dashboard.mission_title') }}
                         </div>
-                      </div> --}}
+                      </div>
 
-                      {{-- <div class="form-group">
+                      <div class="form-group">
                         <label for="mission_desc">{{ __('dashboard.mission_description') }}</label>
                         <textarea class="form-control summernote" name="mission_desc" id="mission_desc" rows="8">{{ isset($row->mission_desc)?$row->mission_desc:'' }}</textarea>
 
@@ -67,9 +73,9 @@
                           {{ __('dashboard.please_provide') }} {{ __('dashboard.mission_description') }}
                         </div>
                       </div>
-                      </div> --}}
+                      </div>
 
-                      {{-- <div class="col-md-6">
+                      <div class="col-md-6">
                       <div class="form-group">
                         <label for="vision_title">{{ __('dashboard.vision_title') }}</label>
                         <input type="text" class="form-control" name="vision_title" id="vision_title" value="{{ isset($row->vision_title)?$row->vision_title:'' }}">
@@ -77,21 +83,21 @@
                         <div class="invalid-feedback">
                           {{ __('dashboard.please_provide') }} {{ __('dashboard.vision_title') }}
                         </div>
-                      </div> --}}
+                      </div>
 
-                      {{-- <div class="form-group">
+                    <div class="form-group">
                         <label for="vision_desc">{{ __('dashboard.vision_description') }}</label>
                         <textarea class="form-control summernote" name="vision_desc" id="vision_desc" rows="8">{{ isset($row->vision_desc)?$row->vision_desc:'' }}</textarea>
 
                         <div class="invalid-feedback">
                           {{ __('dashboard.please_provide') }} {{ __('dashboard.vision_description') }}
                         </div>
-                      </div> --}}
+                      </div>
                       </div>
                     </div>
 
                     <div class="row">
-                      {{-- <div class="form-group col-md-6">
+                      <div class="form-group col-md-6">
                         <label for="image">{{ __('dashboard.thumbnail') }}: <span>{{ __('dashboard.image_size', ['height' => 600, 'width' => 600]) }}</span></label>
                         <input type="file" class="form-control" name="image" id="image">
 
@@ -105,7 +111,7 @@
                         <img src="{{ asset('uploads/'.$path.'/'.$row->image_path) }}" class="img-fluid" alt="Thumb">
                         @endif
                         @endif
-                      </div> --}}
+                      </div>
 
                       <div class="form-group col-md-6">
                         <label for="video_id">{{ __('dashboard.youtube_video_id') }}</label>
@@ -145,8 +151,19 @@
     </div>
     <!-- end row-->
 
-    
 </div> <!-- container -->
 <!-- End Content-->
+
+<!-- Initialize Summernote -->
+<script>
+  $(document).ready(function() {
+    $('.summernote').summernote({
+      height: 300,                 // Set editor height
+      minHeight: null,             // Set minimum height of editor
+      maxHeight: null,             // Set maximum height of editor
+      focus: true                  // Set focus to editable area after initializing Summernote
+    });
+  });
+</script>
 
 @endsection
